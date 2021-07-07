@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Aandelen App</title>
+		<!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
+		<!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> -->
+
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+
+		<div id="button-container">
+			<input type="button" id="button-BTCUSDT" class="button" value="BTC" onclick="javascript: showStream('BTC')" />&nbsp;&nbsp;|&nbsp;
+			<input type="button" id="button-ETHUSDT" class="button" value="ETH" onclick="javascript: showStream('ETH')" />&nbsp;&nbsp;|&nbsp;
+			<input type="button" id="button-DOGEUSDT" class="button" value="DOGE" onclick="javascript: showStream('DOGE')" />
+		</div>
+		<br>
+
+
+
+		<span id="streams-loaded">Streams loaded: <span id="totalstreams"></span> / 7</span><br/><br>
+
+
+		<div id="BTC" class="streams">
+			
+			<div class="data-overview" style="position: relative;"></div>
+				<h2>BTC</h2>
+				<div id="BTCUSDT"></div>
+				<div id="BTCEUR"></div><br>
+				<div id="BTCUSDTOPEN"></div>
+				<div id="BTCEUROPEN"></div>
+			</div>
+
+		</div>
+
+
+		<div id="ETH" class="streams">
+			<h5>ETH</h5>
+			<div id="ETHUSDT"></div>
+			<div id="ETHEUR"></div><br>
+			<div id="ETHUSDTOPEN"></div>
+			<div id="ETHEUROPEN"></div>
+		</div>
+
+		<div id="DOGE" class="streams">
+			<h5>DOGE</h5>
+			<div id="DOGEUSDT"></div>
+			<div id="DOGEEUR"></div><br>
+			<div id="DOGEUSDTOPEN"></div>
+			<div id="DOGEEUROPEN"></div>
+		</div>
+
+		<hr>
+		<div id="USD">
+			<span id="EURUSDT"></span><br>
+		</div>
+
+
+
+		<script src="scripts/script.js"></script>
+  </body>
+</html>
